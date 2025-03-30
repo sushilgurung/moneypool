@@ -1,6 +1,6 @@
 import express, { NextFunction, Request, Response } from 'express';
-import { userRouter } from './routes/user';
-import { AuthService} from './services/auth';
+import { userRouter } from './interfaces/routes/user';
+import { AuthService} from './application/services/auth';
 
 const app = express();
 const port = process.env.PORT || 3000;
